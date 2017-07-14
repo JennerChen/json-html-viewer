@@ -1,0 +1,13 @@
+{
+	"plugins": [
+		"transform-decorators-legacy",
+		"syntax-dynamic-import"
+	],
+	"presets": [
+		[
+			"es2015"
+		],
+		"stage-2",
+		"react"
+	]
+}
