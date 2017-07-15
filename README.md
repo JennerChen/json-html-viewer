@@ -1,2 +1,5 @@
 # react-json-viewer
-react json html viewer render json data into html
+simple react json html viewer render json data into html
+
+install
+`` yarn add json-html-viewer ``

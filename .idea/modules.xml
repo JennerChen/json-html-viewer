@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/react-json-viewer.iml" filepath="$PROJECT_DIR$/.idea/react-json-viewer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/json-html-viewer.iml" filepath="$PROJECT_DIR$/.idea/json-html-viewer.iml" />
     </modules>
   </component>
 </project>

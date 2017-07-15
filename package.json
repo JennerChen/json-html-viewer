@@ -1,6 +1,6 @@
 {
-	"name": "json-viewer",
-	"version": "1.0.0",
+	"name": "json-html-viewer",
+	"version": "0.0.2",
 	"description": "json viewer based on react",
 	"main": "index.js",
 	"repository": "https://github.com/JennerChen/react-json-viewer.git",

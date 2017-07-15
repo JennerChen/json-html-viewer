@@ -1,11 +1,11 @@
-import JsonViewer from '../src/index';
+import JsonHtmlViewer from '../src/index';
 
 import React from 'react';
 import ReactDom from 'react-dom';
 
 ReactDom.render(
 	<div>
-		<JsonViewer json={ JSON.stringify({
+		<JsonHtmlViewer json={ JSON.stringify({
 			"$schema": "http://json-schema.org/draft-04/schema#",
 			"definitions": {},
 			"id": "http://example.com/example.json",

@@ -1,3 +1,3 @@
-import JsonViewer from './component/jsonViewer';
+import JsonHtmlViewer from './component/jsonViewer';
 
-export default JsonViewer;
+export default JsonHtmlViewer;
