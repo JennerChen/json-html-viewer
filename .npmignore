@@ -2,10 +2,12 @@ node_modules/
 examples/
 static/
 
+.idea
 .babelrc
 .eslintrc
 webpack.config.js
 webpack.prod.config.js
+yarn.lock
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
