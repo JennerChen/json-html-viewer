@@ -4,13 +4,12 @@ const ManifestPlugin = require('webpack-manifest-plugin');
 module.exports = {
 	entry: {
 		app: ['babel-polyfill', './src/index.js'],
-//		chart: ['babel-polyfill', './src/chart/exportToGlobal.js'],
-//		monitorTree: ['babel-polyfill', './src/pages/monitor/monitorTree.js']
+		doc: ['babel-polyfill','./examples/index.js']
 	},
 	output: {
 		filename: '[name].js',
 		publicPath: "/js/",
-		path: path.resolve(__dirname, 'static/js')
+		path: path.resolve(__dirname, 'dist/js')
 	},
 	watch: true,
 	devtool: "eval-source-map",
