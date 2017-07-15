@@ -35,13 +35,13 @@ ReactDom.render(
 					"type": "array"
 				}
 			},
-			"array":[{
+			"array": [{
 				"checked": {
 					"id": "/properties/checked",
 					"type": "boolean"
 				}
-			},2,5,true,{}],
-			"isSold":true,
+			}, 2, 5, true, {}],
+			"isSold": true,
 			"type": "object"
 		}) }/>
 	</div>, document.body.querySelector('#root')
