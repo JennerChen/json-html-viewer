@@ -1,6 +1,5 @@
 import React from 'react';
 import propTypes from 'prop-types';
-
 export const blockValidator = {
 	comma: propTypes.bool,
 	breakLine: propTypes.bool,
@@ -9,7 +8,10 @@ export const blockValidator = {
 		propTypes.object
 	]),
 	value: propTypes.any.isRequired,
-	path: propTypes.array.isRequired
+	path: propTypes.array.isRequired,
+	rootActions: propTypes.shape({
+		updateScrollbar: propTypes.func.isRequired
+	})
 };
 
 export class CodeBlock extends React.Component {

@@ -1,4 +1,5 @@
 import React from 'react';
+import propTypes from 'prop-types';
 import {blockValidator} from "./codeTypes";
 import {KeyWordBlock, NumberBlock, StringBlock} from "./primitiveBlock";
 import MapBlock from './mapBlock';
@@ -11,7 +12,7 @@ export default class Viewer extends React.Component {
 		comma: false,
 		breakLine: false,
 		keyName: null,
-		path: []
+		path: [],
 	};
 	
 	render() {
