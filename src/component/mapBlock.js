@@ -19,7 +19,7 @@ export default class MapBlock extends React.Component {
 	
 	
 	renderContent = () => {
-		const {value, path} = this.props;
+		const {value, path, rootActions} = this.props;
 		const codeKeys = Object.keys(value);
 		if (codeKeys.length === 0) {
 			return null
@@ -38,15 +38,17 @@ export default class MapBlock extends React.Component {
 					value={ value[k] }
 					keyName={ k }
 					path={ [...path, k] }
+					rootActions={ rootActions }
 				/>)
 			}
 		</div>
 	};
 	
 	renderCollapseIcon = () => {
-		const {keyName, value} = this.props;
+		const {
+			value
+		} = this.props;
 		const {collapse} = this.state;
-		if (!keyName) return null;
 		if (Object.keys(value).length === 0) return null;
 		return <CollapseIcon
 			onclick={ () => this.setState({
@@ -55,14 +57,17 @@ export default class MapBlock extends React.Component {
 			collapse={ collapse }/>;
 	};
 	
+	componentDidUpdate(preProp, preState) {
+		if (preState.collapse !== this.state.collapse) {
+			this.props.rootActions.updateScrollbar()
+		}
+	}
 	
 	render() {
 		const {comma, breakLine, keyName, value, path} = this.props;
 		return <CodeBlock className="map">
 			<KeyNameSpan keyName={ keyName }/>
 			{ this.renderCollapseIcon()}
-			
-			
 			<JsonSymbol value="{" key={ `start` }/>
 			{ this.renderContent() }
 			<JsonSymbol value="}" key={ `end` }/>

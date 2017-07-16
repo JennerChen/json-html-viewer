@@ -12,7 +12,7 @@ export default class ArrayBlock extends React.Component {
 	};
 	
 	render() {
-		const {comma, breakLine, keyName, value, path} = this.props;
+		const {comma, breakLine, keyName, value, path, rootActions} = this.props;
 		return <CodeBlock className="array">
 			<KeyNameSpan keyName={ keyName }/>
 			<JsonSymbol value="[" key={ `start` }/>
@@ -23,6 +23,7 @@ export default class ArrayBlock extends React.Component {
 					breakLine={ false }
 					value={ v }
 					path={ [...path, i] }
+					rootActions={rootActions}
 				/>)
 			}
 			<JsonSymbol value="]" key={ `end` }/>
